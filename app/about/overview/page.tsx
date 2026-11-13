@@ -13,7 +13,7 @@ const sections = [
     id: "nature",
     title: "In the Lap of Nature",
     icon: Leaf,
-    content: "CHINMAYA VIDYALAYA, CHANDANATHOPE, KOLLAM – the temple of learning, located in the serene lap of nature. Golden sunrises and crimson sunsets welcome flocks of birds to the Vidyalaya campus to add mesmerizing sights and sounds. It is greenery all around, creating a highly conducive and peaceful learning atmosphere.",
+    content: "CHINMAYA VIDYALAYA,ATTUKAL – the temple of learning, located in the serene lap of nature. Golden sunrises and crimson sunsets welcome flocks of birds to the Vidyalaya campus to add mesmerizing sights and sounds. It is greenery all around, creating a highly conducive and peaceful learning atmosphere.",
     image: "/image/about1.avif",
     color: "from-emerald-500/20 to-teal-500/5",
     iconColor: "text-emerald-500",

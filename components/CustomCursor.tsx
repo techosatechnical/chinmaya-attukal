@@ -27,31 +27,25 @@ export function CustomCursor() {
     const handleMouseEnter = () => setIsVisible(true);
     const handleMouseLeave = () => setIsVisible(false);
 
-    // Add classes to interactive elements for hovering state
-    const handleHoverStart = () => setIsHovering(true);
-    const handleHoverEnd = () => setIsHovering(false);
+    const handleMouseOver = (e: MouseEvent) => {
+      const target = e.target as HTMLElement | null;
+      if (!target) return;
+      const isInteractive = Boolean(target.closest("a, button, input, select, textarea"));
+      setIsHovering(isInteractive);
+    };
 
-    window.addEventListener("mousemove", moveCursor);
+    window.addEventListener("mousemove", moveCursor, { passive: true });
+    window.addEventListener("mouseover", handleMouseOver, { passive: true });
     document.addEventListener("mouseenter", handleMouseEnter);
     document.addEventListener("mouseleave", handleMouseLeave);
-    
-    // Add hover listeners to all links and buttons
-    const interactiveElements = document.querySelectorAll('a, button, input, select, textarea');
-    interactiveElements.forEach(el => {
-      el.addEventListener('mouseenter', handleHoverStart);
-      el.addEventListener('mouseleave', handleHoverEnd);
-    });
 
     setIsVisible(true);
 
     return () => {
       window.removeEventListener("mousemove", moveCursor);
+      window.removeEventListener("mouseover", handleMouseOver);
       document.removeEventListener("mouseenter", handleMouseEnter);
       document.removeEventListener("mouseleave", handleMouseLeave);
-      interactiveElements.forEach(el => {
-        el.removeEventListener('mouseenter', handleHoverStart);
-        el.removeEventListener('mouseleave', handleHoverEnd);
-      });
     };
   }, []);
 

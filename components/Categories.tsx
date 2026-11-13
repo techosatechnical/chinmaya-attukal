@@ -3,7 +3,9 @@
 import { motion } from "framer-motion";
 import { CalendarDays, Award, Users, Activity, Megaphone, Compass, Trophy, Music } from "lucide-react";
 import Link from "next/link";
-import CursorGrid from "./CursorGrid";
+import dynamic from "next/dynamic";
+
+const CursorGrid = dynamic(() => import("./CursorGrid"), { ssr: false });
 
 const categories = [
   { icon: CalendarDays, title: "Academic Planner", href: "/academics/academic-planner" },

@@ -117,7 +117,7 @@ export function RecentNews() {
                 className="w-70 md:w-87.5 shrink-0 bg-white rounded-md overflow-hidden group hover:shadow-2xl hover:shadow-blue-900/10 transition-all duration-300 border border-slate-100 flex flex-col"
               >
                 <div className="relative overflow-hidden h-72 md:h-88 shrink-0 bg-slate-100">
-                  <img src={news.image} alt={news.title} className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out" />
+                  <img src={news.image} alt={news.title} loading="lazy" decoding="async" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out" />
                   <div className="absolute top-4 left-4">
                     <span className="bg-white/95 backdrop-blur-sm text-[#004B87] text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">
                       {news.badge}

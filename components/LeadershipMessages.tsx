@@ -123,6 +123,7 @@ export function LeadershipMessages() {
                     src={item.image}
                     alt={item.name}
                     fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 20vw"
                     className={`object-cover ${getImagePosition(item.id)} group-hover:scale-105 transition-transform duration-700 ease-out`}
                   />
                   {/* Subtle gradient overlay to make image look premium */}

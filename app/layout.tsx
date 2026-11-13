@@ -7,16 +7,18 @@ const manrope = Manrope({
   variable: "--font-manrope",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
+  display: "swap",
 });
 
 const urbanist = Urbanist({
   variable: "--font-urbanist",
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Chinmaya Vidyalaya Kollam",
+  title: "Chinmaya Vidyalaya Attukal",
   description: "Providing a strong foundation for students to discover their innate talents and skills.",
 };
 

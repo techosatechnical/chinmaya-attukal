@@ -203,6 +203,8 @@ export function AnnouncementModal() {
                       <img
                         src={currentAd.image}
                         alt={currentAd.alt}
+                        decoding="async"
+                        fetchPriority="high"
                         className="w-full max-h-[82vh] object-contain block select-none"
                       />
                     </Link>
@@ -210,6 +212,8 @@ export function AnnouncementModal() {
                     <img
                       src={currentAd.image}
                       alt={currentAd.alt}
+                      decoding="async"
+                      fetchPriority="high"
                       className="w-full max-h-[82vh] object-contain block select-none"
                     />
                   )}

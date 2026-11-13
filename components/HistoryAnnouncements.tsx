@@ -4,7 +4,9 @@ import { motion } from "framer-motion";
 import { ArrowRight, Bell, Clock } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import WarpText from "./WarpText";
+import dynamic from "next/dynamic";
+
+const WarpText = dynamic(() => import("./WarpText"), { ssr: false });
 
 const announcements = [
   {
@@ -96,7 +98,7 @@ export function HistoryAnnouncements() {
 
               <div className="prose prose-lg prose-slate text-slate-600 space-y-6 leading-relaxed">
                 <p>
-                  <strong className="text-slate-800 font-bold">CHINMAYA VIDYALAYA, CHANDANATHOPE, KOLLAM</strong> the temple of learning, located in the serene lap of nature, golden sunrises and crimson sunsets welcome flock of birds to the Vidyalaya campus to add mesmerizing sights and sounds. It is greenery all around, creating a conducive learning atmosphere.
+                  <strong className="text-slate-800 font-bold">CHINMAYA VIDYALAYA,ATTUKAL</strong> the temple of learning, located in the serene lap of nature, golden sunrises and crimson sunsets welcome flock of birds to the Vidyalaya campus to add mesmerizing sights and sounds. It is greenery all around, creating a conducive learning atmosphere.
                 </p>
                 <p>
                   The education imparted in the Vidyalaya fulfills Pujya Gurudev Swami Chinmayananda's Vision of Education. It enables all Chinmaya kids to bloom with bright hues and spread the fragrance. The presence of Chinmaya Mission Acharya and the Ashram give the Vidyalaya a spiritual ambience. The holy shrine of the Lord Ganesha gives the Vidyalaya a peaceful environment. Chinmaya Blossom, the play school is a feather in the cap of the Vidyalaya. The school is affiliated upto classes XII.

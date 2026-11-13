@@ -91,6 +91,8 @@ export function Testimonials() {
                 <img 
                   src={testimonial.image} 
                   alt={testimonial.name} 
+                  loading="lazy"
+                  decoding="async"
                   className="w-16 h-16 rounded-full object-cover border-[3px] border-[#F0F4F8]"
                 />
                 <div>
@@ -124,6 +126,8 @@ export function Testimonials() {
                   <img 
                     src={testimonial.image} 
                     alt={testimonial.name} 
+                    loading="lazy"
+                    decoding="async"
                     className="w-12 h-12 rounded-full object-cover border-[3px] border-[#F0F4F8]"
                   />
                   <div>

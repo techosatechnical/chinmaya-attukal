@@ -92,6 +92,8 @@ export function Facilities() {
                       <img 
                         src={facility.image} 
                         alt={facility.title}
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       />
                     </div>

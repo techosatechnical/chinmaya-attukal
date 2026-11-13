@@ -12,11 +12,15 @@ export function Footer() {
               <img
                 src="/logos/CV attukal logo white.png"
                 alt="Chinmaya Vidyalaya Attukal Logo"
+                loading="lazy"
+                decoding="async"
                 className="h-16 sm:h-20 w-auto drop-shadow-sm group-hover:opacity-90 transition-opacity"
               />
               <img
                 src="/logos/CV attukal text white.png"
                 alt="Chinmaya Vidyalaya Attukal"
+                loading="lazy"
+                decoding="async"
                 className="h-8 sm:h-9.5 lg:h-10 w-auto drop-shadow-sm group-hover:opacity-90 transition-opacity"
               />
             </Link>

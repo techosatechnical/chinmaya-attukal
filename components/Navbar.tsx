@@ -180,6 +180,8 @@ export function Navbar() {
               <img
                 src="/logos/CV attukal logo white.png"
                 alt="Logo Graphic"
+                decoding="async"
+                fetchPriority="high"
                 className="h-13 lg:h-[4.5rem] w-auto drop-shadow-sm"
               />
             </Link>
@@ -190,6 +192,8 @@ export function Navbar() {
             <img
               src="/logos/CV attukal text white.png"
               alt="Chinmaya Vidyalaya Attukal"
+              decoding="async"
+              fetchPriority="high"
               className="h-8 sm:h-9 lg:h-11 w-auto drop-shadow-sm"
             />
           </Link>
