@@ -16,18 +16,24 @@ export interface AdItem {
 export const ADS: AdItem[] = [
   {
     id: 1,
+    image: "/image/academic result 1.jpeg",
+    alt: "Chinmaya Vidyalaya Academic Results",
+    link: "/academics/academic-results",
+  },
+  {
+    id: 2,
     image: "/accolades/Class X and XII 2024-25.jpeg",
     alt: "Chinmaya Vidyalaya Class X and XII Results 2024-25",
     link: "/academics/academic-results",
   },
   {
-    id: 2,
+    id: 3,
     image: "/accolades/jee main.jpeg",
     alt: "JEE Main Achievers",
     link: "/accolades",
   },
   {
-    id: 3,
+    id: 4,
     image: "/accolades/sports everrolling trophy.jpeg",
     alt: "Sports Ever-Rolling Trophy Winners",
     link: "/activities/sports",
