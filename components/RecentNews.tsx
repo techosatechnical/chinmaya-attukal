@@ -1,0 +1,164 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { ArrowRight, Calendar } from "lucide-react";
+import Link from "next/link";
+
+const newsList = [
+  {
+    image: "/news/Chinmaya Vihaan.jpeg",
+    badge: "Event",
+    date: "Recent",
+    title: "Chinmaya Vihaan",
+    excerpt: "Celebrating excellence, unity, and youthful spirit at our flagship annual school fest, Chinmaya Vihaan.",
+    link: "/academics/news"
+  },
+  {
+    image: "/news/Crescendo 2026.jpeg",
+    badge: "Culture",
+    date: "2026",
+    title: "Crescendo 2026",
+    excerpt: "An electrifying inter-school cultural extravaganza uniting vibrant young talents across disciplines.",
+    link: "/academics/news"
+  },
+  {
+    image: "/news/CVP Chat Bot Siddha.jpeg",
+    badge: "Innovation",
+    date: "Latest",
+    title: "CVP Chat Bot Siddha",
+    excerpt: "Introducing Siddha, our state-of-the-art AI chatbot designed to assist students and parents with school information.",
+    link: "/academics/news"
+  },
+  {
+    image: "/news/Success Saga 2026.jpeg",
+    badge: "Academics",
+    date: "2026",
+    title: "Success Saga 2026",
+    excerpt: "Honoring the stellar academic milestones, board examination toppers, and high achievers of Chinmaya Vidyalaya.",
+    link: "/academics/news"
+  },
+  {
+    image: "/news/chin elevens cup.jpeg",
+    badge: "Sports",
+    date: "Recent",
+    title: "Chin Elevens Cup",
+    excerpt: "Thrilling sportsmanship, teamwork, and championship football spirit at the prestigious Chin Elevens Cup.",
+    link: "/academics/news"
+  },
+  {
+    image: "/news/World Environment Day.jpeg",
+    badge: "Campus",
+    date: "Annual",
+    title: "World Environment Day",
+    excerpt: "Championing eco-consciousness and sustainable living with sapling plantation and environmental awareness programs.",
+    link: "/academics/news"
+  },
+];
+
+export function RecentNews() {
+  return (
+    <section className="py-8 bg-slate-50">
+      <div className="container mx-auto px-4 lg:px-8">
+        <motion.div
+          className="mb-8 text-center max-w-2xl mx-auto"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.4 }}
+          variants={{
+            hidden: { opacity: 1 },
+            visible: { opacity: 1, transition: { staggerChildren: 0.08 } }
+          }}
+        >
+          <motion.span
+            variants={{
+              hidden: { opacity: 0, filter: "blur(10px)", y: 15 },
+              visible: { opacity: 1, filter: "blur(0px)", y: 0, transition: { duration: 0.4, ease: "easeOut" } }
+            }}
+            className="text-primary font-semibold tracking-wider uppercase mb-2 block"
+          >
+            Highlights
+          </motion.span>
+          <motion.h2
+            variants={{
+              hidden: { opacity: 1 },
+              visible: { opacity: 1, transition: { staggerChildren: 0.08, delayChildren: 0.1 } }
+            }}
+            className="text-3xl md:text-4xl font-bold text-black flex flex-wrap justify-center items-center gap-x-2"
+          >
+            <motion.span variants={{ hidden: { opacity: 0, filter: "blur(12px)", y: 15 }, visible: { opacity: 1, filter: "blur(0px)", y: 0, transition: { duration: 0.4, ease: "easeOut" } } }}>
+              Recent
+            </motion.span>
+            <motion.span
+              variants={{ hidden: { opacity: 0, filter: "blur(12px)", y: 15 }, visible: { opacity: 1, filter: "blur(0px)", y: 0, transition: { duration: 0.4, ease: "easeOut" } } }}
+              className="text-secondary relative inline-block mx-1"
+            >
+              News
+              <svg className="absolute w-full h-auto -bottom-2 left-0 text-secondary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 7" fill="none"><path d="M2 3.5 Q30 1 60 3.8 T120 3.2 T180 4 T240 3.3 T300 4.2 T348 3.5" stroke="currentColor" strokeWidth="4" strokeLinecap="round" /></svg>
+            </motion.span>
+            <motion.span variants={{ hidden: { opacity: 0, filter: "blur(12px)", y: 15 }, visible: { opacity: 1, filter: "blur(0px)", y: 0, transition: { duration: 0.4, ease: "easeOut" } } }}>
+              & Updates
+            </motion.span>
+          </motion.h2>
+        </motion.div>
+
+        <div className="overflow-hidden py-8 relative -mx-4 px-4 sm:mx-0 sm:px-0">
+          {/* Gradient overlays for smooth fade effect at edges */}
+          <div className="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-linear-to-r from-slate-50 to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-linear-to-l from-slate-50 to-transparent z-10 pointer-events-none" />
+
+          <motion.div
+            className="flex gap-6 md:gap-8 w-max"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{ ease: "linear", duration: 25, repeat: Infinity }}
+          >
+            {[...newsList, ...newsList, ...newsList].map((news, index) => (
+              <div
+                key={`${news.title}-${index}`}
+                className="w-70 md:w-87.5 shrink-0 bg-white rounded-md overflow-hidden group hover:shadow-2xl hover:shadow-blue-900/10 transition-all duration-300 border border-slate-100 flex flex-col"
+              >
+                <div className="relative overflow-hidden h-72 md:h-88 shrink-0 bg-slate-100">
+                  <img src={news.image} alt={news.title} className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out" />
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-white/95 backdrop-blur-sm text-[#004B87] text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">
+                      {news.badge}
+                    </span>
+                  </div>
+                </div>
+
+                <div className="p-6 flex flex-col flex-1">
+                  <div className="flex items-center gap-2 text-sm text-slate-500 font-medium mb-3">
+                    <Calendar className="w-4 h-4 text-[#FF6A00]" />
+                    <span>{news.date}</span>
+                  </div>
+
+                  <h3 className="text-[19px] font-bold text-slate-900 mb-3 group-hover:text-[#385EEC] transition-colors leading-snug">
+                    <Link href={news.link}>{news.title}</Link>
+                  </h3>
+
+                  <p className="text-slate-600 text-sm leading-relaxed flex-1 line-clamp-3">
+                    {news.excerpt}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </motion.div>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-8 text-center"
+        >
+          <Link href="/academics/news" className="inline-flex items-center justify-center px-8 py-3.5 bg-white border-2 border-slate-200 text-slate-700 font-bold rounded-full hover:bg-slate-50 hover:border-[#385EEC] hover:text-[#385EEC] transition-all duration-300 group shadow-sm hover:shadow-md">
+            View All News
+            <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1.5 transition-transform" />
+          </Link>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+
+
