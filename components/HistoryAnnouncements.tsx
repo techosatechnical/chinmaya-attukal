@@ -87,7 +87,7 @@ export function HistoryAnnouncements() {
 
               <div className="relative w-full h-64 sm:h-80 mb-10 rounded-md overflow-hidden shadow-2xl group">
                 <Image
-                  src="/image/cv attukal2.jpg"
+                  src="/image/cv attukal school 2.jpg"
                   alt="Chinmaya Vidyalaya School Campus"
                   fill
                   sizes="(max-width: 1024px) 100vw, 60vw"
