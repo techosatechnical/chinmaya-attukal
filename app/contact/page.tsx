@@ -52,7 +52,7 @@ export default function ContactPage() {
                 <MapPin className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-slate-800 mb-2">Our Location</h3>
-              <p className="text-slate-600 text-sm">Chinmaya Vidyalaya,<br />Chandanathope, Kollam</p>
+              <p className="text-slate-600 text-sm">Chinmaya Vidyalaya,<br />Attukal</p>
             </motion.div>
 
             {/* Card 2 */}
@@ -80,7 +80,7 @@ export default function ContactPage() {
                 <Mail className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-slate-800 mb-2">Email Address</h3>
-              <p className="text-slate-600 text-sm">chin_kollam@chintvm.edu.in<br /><span className="text-transparent selection:text-transparent">.</span></p>
+              <p className="text-slate-600 text-sm">chin_attukal@chintvm.edu.in<br /><span className="text-transparent selection:text-transparent">.</span></p>
             </motion.div>
 
             {/* Card 4 */}

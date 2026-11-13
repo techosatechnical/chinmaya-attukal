@@ -72,7 +72,7 @@ function Hero() {
     <section ref={ref} className="relative h-[45vh] flex items-center justify-center overflow-hidden bg-[#02133a]">
 
       <motion.div className="absolute inset-0" style={{ y: imgY }}>
-        <Image src="/image/about2.webp" alt="Campus" fill sizes="100vw" priority className="object-cover opacity-70" />
+        <Image src="/image/cv attukal school 2.jpg" alt="Campus" fill sizes="100vw" priority className="object-cover opacity-70" />
       </motion.div>
 
 
@@ -298,7 +298,7 @@ function BentoGrid() {
             transition={{ duration: 0.7 }}
             className="col-span-2 row-span-2 relative rounded-md overflow-hidden min-h-[320px] group shadow-xl shadow-slate-200"
           >
-            <Image src="/image/about3.webp" alt="School Building" fill sizes="50vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
+            <Image src="/image/cv attukal school 1.webp" alt="School Building" fill sizes="50vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#02133a]/70 via-[#02133a]/10 to-transparent" />
             <div className="absolute bottom-6 left-6">
               <p className="text-white/60 text-[10px] uppercase tracking-widest mb-1">Our Home</p>
@@ -381,7 +381,7 @@ function BentoGrid() {
             transition={{ delay: 0.4 }}
             className="col-span-2 md:col-span-4 rounded-md overflow-hidden relative min-h-[180px] shadow-xl shadow-slate-200"
           >
-            <Image src="/image/about4.jpg" alt="Campus Life" fill sizes="100vw" className="object-cover object-center" />
+            <Image src="/image/cv attukal school 3.webp" alt="Campus Life" fill sizes="100vw" className="object-cover object-center" />
             <div className="absolute inset-0 bg-gradient-to-r from-[#02133a]/85 via-[#02133a]/60 to-transparent" />
             <div className="absolute inset-0 flex items-center px-10">
               <div>
@@ -402,10 +402,10 @@ function BentoGrid() {
 /* ─── GALLERY ────────────────────────────────────────────────── */
 function Gallery() {
   const images = [
-    { src: "/image/about1.avif", cls: "col-span-2 row-span-2" },
-    { src: "/image/about3.webp", cls: "col-span-1 row-span-1" },
-    { src: "/image/about4.jpg", cls: "col-span-1 row-span-1" },
-    { src: "/image/about2.webp", cls: "col-span-2 row-span-1" },
+    { src: "/image/cv attukal school 1.webp", cls: "col-span-2 row-span-2" },
+    { src: "/image/cv attukal school 2.jpg", cls: "col-span-1 row-span-1" },
+    { src: "/image/cv attukal school 3.webp", cls: "col-span-1 row-span-1" },
+    { src: "/image/school.jpeg", cls: "col-span-2 row-span-1" },
   ];
 
   return (

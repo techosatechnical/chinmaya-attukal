@@ -77,7 +77,7 @@ function Hero() {
           transition={{ duration: 0.6 }}
           className="text-[#FF6A00] text-xs font-black uppercase tracking-[0.3em] mb-2 text-center"
         >
-          Chinmaya Vidyalaya · Kollam
+          Chinmaya Vidyalaya · Attukal
         </motion.p>
 
         {/* WarpText */}
@@ -154,9 +154,9 @@ function FeaturedLeaders() {
                     <person.icon className="w-3.5 h-3.5" />
                     {person.role}
                   </div>
-                  
+
                   <h3 className="text-2xl md:text-4xl font-black text-slate-800 leading-tight mb-4">{person.name}</h3>
-                  
+
                   <p className="text-slate-500 leading-relaxed text-base max-w-lg">
                     Guiding the institution with unwavering dedication, {person.name.split(' ').slice(-1)[0]} has been instrumental in shaping the vision and expanding the horizons of Chinmaya Vidyalaya.
                   </p>

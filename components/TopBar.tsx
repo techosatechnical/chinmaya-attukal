@@ -10,7 +10,7 @@ export function TopBar() {
           <div className="flex items-center space-x-6 shrink-0">
             {/* <a href="mailto:info@gmail.com" className="flex items-center space-x-2 hover:text-[#FF6A00] transition-colors">
               <Mail className="w-4 h-4" />
-              <span>chin_kollam@chintvm.edu.in</span>
+              <span>chin_attukal@chintvm.edu.in</span>
             </a>
             <a href="tel:+0082569854" className="flex items-center space-x-2 hover:text-[#FF6A00] transition-colors">
               <Phone className="w-4 h-4" />

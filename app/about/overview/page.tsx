@@ -16,7 +16,7 @@ const sections = [
     title: "Holistic Education & Heritage",
     icon: Leaf,
     content: "Chinmaya Vidyalaya, Manacaud-Attukal, (Affiliated to CBSE No.930065) situated near the famous Attukal Devi Temple, is one among the network of Vidyalayas founded by Param Poojya Gurudev Swami Chinmayananda, intended to impart holistic education and produce integrated personalities.",
-    image: "/image/about1.avif",
+    image: "/image/cv attukal school 1.webp",
     color: "from-emerald-500/20 to-teal-500/5",
     iconColor: "text-emerald-500",
   },
@@ -25,7 +25,7 @@ const sections = [
     title: "Our Historic Journey",
     icon: History,
     content: "The foundation stone for a building at Manacaud was laid by Swami Dayanandaji, on 29th May 1981. Heavy rush of students seeking admission in various classes forced the management to bifurcate the Vidyalaya. The splendid three storied building at Attukal was inaugurated by Poojya Gurudev on 21st March, 1990. 2006-07 was the Silver Jubilee year of the Vidyalaya. A new two storied building was inaugurated on 22nd March 2010 housing classes from KG to 12th.",
-    image: "/image/cv attukal2.jpg",
+    image: "/image/cv attukal school 2.jpg",
     color: "from-purple-500/20 to-fuchsia-500/5",
     iconColor: "text-purple-500",
   },
@@ -34,7 +34,7 @@ const sections = [
     title: "Academic Excellence & Facilities",
     icon: MonitorPlay,
     content: "The envious results of AISSE since 1993 proclaim the dedicated service of teachers having the touch of excellence. Computer education, Adaptive curriculum, Semester system boost the academic activities of the Vidyalaya. Adequately equipped labs and library enhance the teaching-learning process. Sanskrit is given pride of place besides Malayalam, Hindi and Tamil.",
-    image: "/image/about3.webp",
+    image: "/image/cv attukal school 3.webp",
     color: "from-blue-500/20 to-cyan-500/5",
     iconColor: "text-blue-500",
   },
@@ -43,7 +43,7 @@ const sections = [
     title: "Integrated Development",
     icon: BookOpen,
     content: "Besides academic excellence, Physical development, spiritual enlightenment, curricular, co-curricular and extra curricular pursuits, character building are given equal importance. The various tasks undertaken by our Vidyalaya bear testimony to the competency of the Vidyalaya in conducting, organizing and co-ordinating fruitful activities. Balavihar, CHYK, Scouts and Guides, Cub Unit are very active in our Vidyalaya. Our Vidyalaya stands for integrated development of each child who can face the challenges of the modern world with a smile and make a difference in the world.",
-    image: "/image/about4.jpg",
+    image: "/image/school.jpeg",
     color: "from-orange-500/20 to-amber-500/5",
     iconColor: "text-orange-500",
   }
@@ -59,7 +59,7 @@ export default function AboutOverview() {
       <section className="relative pt-32 pb-10 lg:pt-40 lg:pb-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/image/about2.webp"
+            src="/image/cv attukal school 2.jpg"
             alt="School Campus"
             fill
             sizes="100vw"
@@ -181,10 +181,10 @@ export default function AboutOverview() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
-              { src: "/image/about4.jpg", colSpan: "col-span-2", rowSpan: "row-span-2" },
-              { src: "/image/about1.avif", colSpan: "col-span-2 md:col-span-1", rowSpan: "row-span-1" },
+              { src: "/image/cv attukal school 1.webp", colSpan: "col-span-2", rowSpan: "row-span-2" },
+              { src: "/image/cv attukal school 2.jpg", colSpan: "col-span-2 md:col-span-1", rowSpan: "row-span-1" },
               { src: "/image/school.jpeg", colSpan: "col-span-2 md:col-span-1", rowSpan: "row-span-1" },
-              { src: "/image/about3.webp", colSpan: "col-span-2", rowSpan: "row-span-1" }
+              { src: "/image/cv attukal school 3.webp", colSpan: "col-span-2", rowSpan: "row-span-1" }
             ].map((img, i) => (
               <motion.div
                 key={i}
