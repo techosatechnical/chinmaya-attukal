@@ -12,27 +12,59 @@ export default function FrontrunnersPage() {
   const testimonials = [
     {
       id: 1,
-      quote: "Proud to be a student of Chinmaya Vidhalaya Kollam for 14 years of my academic life from KG to class 12. Those days were the most valuable days in my life which moulded the human in me in every aspects.",
-      author: "Dr. Siji Nath S",
-      designation: "BAMS, CCMC, Marma Specialist",
-      organization: "Ramaiah Indic Speciality Ayurveda, Banjara Hills, Hyderabad",
-      image: "/frontrunner/Dr Siji Nath S.jpg"
+      quote: "I was a student of Chinmaya Vidyalaya Attukal till 10th; batch of 2005. I have done my graduation in Electronics and Communication from Government Engineering College, Barton Hill. I also have MA in Economics and Masters in Public Management. I have worked in Tata Elxsi when I got into the Indian Postal Services. In 2015, I got selected to the Indian Administrative Service, Tamil Nadu Cadre. I have worked in various capacities in Madurai, Ramanathapuram, Nagercoil, Thoothukudi, Tirunelveli. Presently, I am Joint Commissioner Municipal Administration and CEO (Tamil Nadu Water Investment Company Limited). If my character and values are of help to public as a civil servant, it is only because of the virtues taught in my school. I am deeply indebted to the whole family of Chinmaya Mission. Hari Om.",
+      author: "B Vishnu Chandran IAS",
+      designation: "Joint Commissioner Municipal Administration & CEO",
+      organization: "Tamil Nadu Water Investment Company Limited (Batch of 2005)",
+      image: "/frontrunner/B Vishnu Chandran IAS.jpeg"
     },
     {
       id: 2,
-      quote: "Hari Om! If I have to speak something about the school which I have studied for more than a decade, I’ll start it with our beloved MathaJi.. She is the one person I misses a lot after completing my entire schooling.. It would be because she had taught us the basic value education from such a small age. If at all I posses any moral qualities now, she is the main reason for all that. Sliding pages of Mata Ji, there comes my special teachers, Principal and other administrative staffs equally. There’s no hierarchy in priority for those people as everyone had played an important role in making me/ moulding me like who I’m now! Like everyone says, schooling is the most important period for youths to develop or restrain themselves and the one great message our Chinmayananda has taught me is ‘One should live a life with exemplary simplicity personified!’ and I ought to follow that in my life too.. I chose my career as a doctor to serve people with love which i have got plenty from all my people out there! Once again I thank all my teachers, staffs and my much loved students for the truly outstanding support you all have showered us!",
-      author: "Dr. Kavya K S",
-      designation: "Doctor",
-      organization: "",
-      image: "/frontrunner/Dr. Kavya K S.jpg"
+      quote: "Arun P R (Std X: 2005 passout) — Scientist/Engineer in Vikram Sarabhai Space Centre with over 10 years of experience, First Rashtrapati Scout Awardee from Chinmaya Vidyalaya, Attukal. NTSE Scholar, State Rank 38 in Kerala Engg Entrance 2007.",
+      author: "Arun P R",
+      designation: "Scientist / Engineer",
+      organization: "Vikram Sarabhai Space Centre (VSSC) · Std X 2005 Passout",
+      image: "/frontrunner/Arun P R.jpeg"
     },
     {
       id: 3,
-      quote: "My life at Chinmaya changed who I am and has given me the most valuable skills for an academic growth. I look back at my prestigious institute with respect and love. Thank you",
-      author: "Dr. Anusree M.R",
-      designation: "Assistant professor, Department of Statistics",
-      organization: "St.Thomas college, Thrissur",
-      image: "/frontrunner/Anusree.jpg"
+      quote: "I was a student of Chinmaya Vidyalaya Attukal from LKG to 10th STD. I passed out in 2002. Presently I am Assistant Professor in Anaesthesia under Medical Education Department, Kerala after completing MD and DNB from Trivandrum Medical College. I consider my teachers at the Vidyalaya as my greatest blessing and asset in this life. I never had any tuitions outside and the educational culture instilled in me by my teachers right from the primary classes has helped me to achieve success. Traditions and values taught by my teachers still continue to guide me and has helped me become a better person.",
+      author: "Dr. Dhanya P.R",
+      designation: "Assistant Professor in Anaesthesia",
+      organization: "Medical Education Department, Kerala (Batch of 2002)",
+      image: "/frontrunner/Dr. Dhanya P.R.jpg"
+    },
+    {
+      id: 4,
+      quote: "Chinmaya Vidyalaya Attukal is so close to my heart, the single answer to the reason for whatever I could achieve in my professional and personal life. My Vidyalaya, situated close to the world-renowned Attukal Devi Temple, is a great destination for children to study and develop holistically. Education has long been revered on this campus. C.V. Attukal, for me, is a peaceful, harmonious society that turns students into responsible citizens who are intellectually enlightened and garnished with a bunch of talents and interests beyond the curriculum. I am proud to be part of this Chinmaya family. Our Principal, teachers and other staff members have always been loving and encouraging. I still have fond recollections of performing bhajans and chanting the Bhagavad Gita and Ramayana at various Mission level programmes during my school days. I am confident that this temple of knowledge bestows on each student a practical and judicious blend of academic achievement, character building, and personality development. I am blessed to be one among the fortunate CVAites who could personally meet our Pujya Gurudev, Swami Chinmayanandaji and receive his blessings.",
+      author: "Dr. G. R. Jayadevan",
+      designation: "Assistant Professor & Head, Dept. of Dairy Business Management (B.Tech, MBA, PGDM, PGD-PRM, Ph.D. NIT Trichy)",
+      organization: "Faculty of Dairy Science & Technology, Kerala Veterinary and Animal Sciences University (Class X, 1999 Pass Out)",
+      image: "/frontrunner/Dr.G.R.Jayadevan.jpeg"
+    },
+    {
+      id: 5,
+      quote: "Studied in Chinmaya Vidyalaya Attukal 1985 to 1993. My daughters Deekshitha S (7B) and Harshitha S (3A) studying in Chinmaya Attukal now. One cannot build a great building on weak foundation. My foundation of my education was laid super strong by the wonderful teachers and professors in Chinmaya Vidyalaya. Apart from normal academic studies, chanting Gita in morning before class and bringing in spiritual value education at my young age, is helping me to face any situation in life with confidence. Thank you Chinmaya Vidyalaya..",
+      author: "Subramony Venkiteswaran",
+      designation: "Company Secretary & Associate Vice President, Legal, Compliance & Audit (FCS, CMA, B.Com, LLB, M.Com, MPhil, MFM, SoxCPA)",
+      organization: "Envestnet (1985 – 1993)",
+      image: "/frontrunner/Subramony Venkiteswaran.jpg"
+    },
+    {
+      id: 6,
+      quote: "Working as Hindi teacher in Chinmaya Vidyalaya Attukal. One of my dream come true, as a previous student of this school. I completed my 14 yrs of school life as a Chinmayan. I am feeling so proud as I am working with the teachers who taught me. My Hindi Teacher Suma, Prita (Geography), Anil (Sanskrit), Velammal (Maths), Remesh Lal (P.T), Meera (Dance), Saritha (English, my class teacher also). In my childhood days teachers asked me about my dreams and I replied to them that I want to become a Hindi teacher and also want to work in my School itself. Now I am living in my dream, this is possible only because of my parents, my teachers and my school itself. Chinmaya Vidyalaya made me what I am today. The culture and the tradition which I got from my school helped me to lead my life.",
+      author: "Meera C. Nair",
+      designation: "Hindi Teacher",
+      organization: "Chinmaya Vidyalaya Attukal",
+      image: "/frontrunner/Meera C Nair.jpeg"
+    },
+    {
+      id: 7,
+      quote: "Batch – 2013 pass out, Chinmaya Vidyalaya Attukal, Trivandrum. I joined for MBBS in Government Medical College, Kannur the same year. I am currently doing my post graduation in Internal Medicine from Government Medical College, Jhalawar, Rajasthan.",
+      author: "Dr Megha",
+      designation: "PG Resident in Internal Medicine (MBBS)",
+      organization: "Government Medical College, Jhalawar, Rajasthan (Batch of 2013)",
+      image: "/frontrunner/Megha.jpeg"
     }
   ];
 
@@ -98,6 +130,7 @@ export default function FrontrunnersPage() {
                     src={item.image}
                     alt={item.author}
                     fill
+                    sizes="64px"
                     className="object-cover"
                   />
                 </div>
@@ -136,6 +169,7 @@ export default function FrontrunnersPage() {
                   src={selectedItem.image}
                   alt={selectedItem.author}
                   fill
+                  sizes="96px"
                   className="object-cover"
                 />
               </div>

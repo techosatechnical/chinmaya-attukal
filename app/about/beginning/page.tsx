@@ -405,7 +405,7 @@ function Gallery() {
     { src: "/image/cv attukal school 1.webp", cls: "col-span-2 row-span-2" },
     { src: "/image/cv attukal school 2.jpg", cls: "col-span-1 row-span-1" },
     { src: "/image/cv attukal school 3.webp", cls: "col-span-1 row-span-1" },
-    { src: "/image/school.jpeg", cls: "col-span-2 row-span-1" },
+    { src: "/image/cv attukal school 5.webp", cls: "col-span-2 row-span-1" },
   ];
 
   return (

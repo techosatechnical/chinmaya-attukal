@@ -43,7 +43,7 @@ const sections = [
     title: "Integrated Development",
     icon: BookOpen,
     content: "Besides academic excellence, Physical development, spiritual enlightenment, curricular, co-curricular and extra curricular pursuits, character building are given equal importance. The various tasks undertaken by our Vidyalaya bear testimony to the competency of the Vidyalaya in conducting, organizing and co-ordinating fruitful activities. Balavihar, CHYK, Scouts and Guides, Cub Unit are very active in our Vidyalaya. Our Vidyalaya stands for integrated development of each child who can face the challenges of the modern world with a smile and make a difference in the world.",
-    image: "/image/school.jpeg",
+    image: "/image/cv attukal school 5.webp",
     color: "from-orange-500/20 to-amber-500/5",
     iconColor: "text-orange-500",
   }
@@ -183,7 +183,7 @@ export default function AboutOverview() {
             {[
               { src: "/image/cv attukal school 1.webp", colSpan: "col-span-2", rowSpan: "row-span-2" },
               { src: "/image/cv attukal school 2.jpg", colSpan: "col-span-2 md:col-span-1", rowSpan: "row-span-1" },
-              { src: "/image/school.jpeg", colSpan: "col-span-2 md:col-span-1", rowSpan: "row-span-1" },
+              { src: "/image/cv attukal school 4.webp", colSpan: "col-span-2 md:col-span-1", rowSpan: "row-span-1" },
               { src: "/image/cv attukal school 3.webp", colSpan: "col-span-2", rowSpan: "row-span-1" }
             ].map((img, i) => (
               <motion.div
