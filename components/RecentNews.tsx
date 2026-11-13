@@ -6,52 +6,52 @@ import Link from "next/link";
 
 const newsList = [
   {
-    image: "/news/infini.jpeg",
+    image: "/news/Chinmaya Vihaan.jpeg",
     badge: "Event",
-    date: "Coming Soon",
-    title: "INFNI",
-    excerpt: "Experience innovation and excellence at INFNI, our premier technology and cultural symposium.",
-    link: "#"
-  },
-  {
-    image: "/news/tedx-cva.png",
-    badge: "Special Event",
     date: "Recent",
-    title: "TED-X Chinmaya Vidyalaya",
-    excerpt: "An inspiring day of 'ideas worth spreading', featuring visionary speakers and thought-provoking discussions.",
-    link: "#"
+    title: "Chinmaya Vihaan",
+    excerpt: "Celebrating excellence, unity, and youthful spirit at our flagship annual school fest, Chinmaya Vihaan.",
+    link: "/academics/news"
   },
   {
-    image: "/news/arts fest.jpeg",
+    image: "/news/Crescendo 2026.jpeg",
     badge: "Culture",
-    date: "Recent",
-    title: "Arts Fest",
-    excerpt: "A grand celebration of creativity, talent, and artistic expression by the vibrant students of our Vidyalaya.",
-    link: "#"
+    date: "2026",
+    title: "Crescendo 2026",
+    excerpt: "An electrifying inter-school cultural extravaganza uniting vibrant young talents across disciplines.",
+    link: "/academics/news"
   },
   {
-    image: "/news/environment day.jpeg",
-    badge: "Campus",
-    date: "Recent",
-    title: "Environment Day",
-    excerpt: "Taking steps towards a greener future. Students participated in tree plantation drives and eco-awareness campaigns.",
-    link: "#"
+    image: "/news/CVP Chat Bot Siddha.jpeg",
+    badge: "Innovation",
+    date: "Latest",
+    title: "CVP Chat Bot Siddha",
+    excerpt: "Introducing Siddha, our state-of-the-art AI chatbot designed to assist students and parents with school information.",
+    link: "/academics/news"
   },
   {
-    image: "/news/sports meet.jpg",
+    image: "/news/Success Saga 2026.jpeg",
+    badge: "Academics",
+    date: "2026",
+    title: "Success Saga 2026",
+    excerpt: "Honoring the stellar academic milestones, board examination toppers, and high achievers of Chinmaya Vidyalaya.",
+    link: "/academics/news"
+  },
+  {
+    image: "/news/chin elevens cup.jpeg",
     badge: "Sports",
     date: "Recent",
-    title: "Annual Sports Meet",
-    excerpt: "Students showcased exceptional athleticism and team spirit during our multi-disciplinary sports competition.",
-    link: "#"
+    title: "Chin Elevens Cup",
+    excerpt: "Thrilling sportsmanship, teamwork, and championship football spirit at the prestigious Chin Elevens Cup.",
+    link: "/academics/news"
   },
   {
-    image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=800",
-    badge: "Academics",
-    date: "Upcoming",
-    title: "Science Exhibition 2026",
-    excerpt: "Explore groundbreaking projects and scientific models created by our brilliant young minds.",
-    link: "#"
+    image: "/news/World Environment Day.jpeg",
+    badge: "Campus",
+    date: "Annual",
+    title: "World Environment Day",
+    excerpt: "Championing eco-consciousness and sustainable living with sapling plantation and environmental awareness programs.",
+    link: "/academics/news"
   },
 ];
 
@@ -116,8 +116,8 @@ export function RecentNews() {
                 key={`${news.title}-${index}`}
                 className="w-70 md:w-87.5 shrink-0 bg-white rounded-md overflow-hidden group hover:shadow-2xl hover:shadow-blue-900/10 transition-all duration-300 border border-slate-100 flex flex-col"
               >
-                <div className="relative overflow-hidden h-48 shrink-0">
-                  <img src={news.image} alt={news.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
+                <div className="relative overflow-hidden h-72 md:h-88 shrink-0 bg-slate-100">
+                  <img src={news.image} alt={news.title} className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out" />
                   <div className="absolute top-4 left-4">
                     <span className="bg-white/95 backdrop-blur-sm text-[#004B87] text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">
                       {news.badge}

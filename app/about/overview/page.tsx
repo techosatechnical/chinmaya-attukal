@@ -41,7 +41,7 @@ const sections = [
     title: "Our Historic Journey",
     icon: History,
     content: "The Vidyalaya was a long pending dream of the people of Kollam. It was first established on 23rd Oct 1985 at Manayilkulangara, Kollam. The Vidyalaya attained its gradual growth and as classes up to VII started functioning, it was shifted to its new sprawling location at Chandanathope in 1996 under the visionary leadership of Chinmaya Educational Trust, Thiruvananthapuram.",
-    image: "/image/about3.webp",
+    image: "/image/cv attukal2.jfif",
     color: "from-purple-500/20 to-fuchsia-500/5",
     iconColor: "text-purple-500",
   }

@@ -85,11 +85,11 @@ export function HistoryAnnouncements() {
 
               <div className="relative w-full h-64 sm:h-80 mb-10 rounded-md overflow-hidden shadow-2xl group">
                 <Image
-                  src="/image/about3.webp"
+                  src="/image/cv attukal2.jfif"
                   alt="Chinmaya Vidyalaya School Campus"
                   fill
                   sizes="(max-width: 1024px) 100vw, 60vw"
-                  className="object-cover scale-[1.6] group-hover:scale-[1.65] transition-transform duration-700 ease-out"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-slate-900/60 via-slate-900/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
               </div>

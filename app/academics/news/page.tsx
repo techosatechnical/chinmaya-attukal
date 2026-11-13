@@ -11,59 +11,58 @@ import Link from "next/link";
 const allNews = [
   {
     id: 1,
-    image: "/news/infini.jpeg",
+    image: "/news/Chinmaya Vihaan.jpeg",
     category: "Event",
-    date: "Coming Soon",
-    title: "INFNI",
-    excerpt: "Experience innovation and excellence at INFNI, our premier technology and cultural symposium.",
+    date: "Recent",
+    title: "Chinmaya Vihaan",
+    excerpt: "Celebrating excellence, unity, and youthful spirit at our flagship annual school fest, Chinmaya Vihaan.",
     link: "#"
   },
   {
     id: 2,
-    image: "/news/tedx-cva.png",
-    category: "Event",
-    date: "Recent",
-    title: "TED-X Chinmaya Vidyalaya",
-    excerpt: "An inspiring day of 'ideas worth spreading', featuring visionary speakers and thought-provoking discussions.",
+    image: "/news/Crescendo 2026.jpeg",
+    category: "Culture",
+    date: "2026",
+    title: "Crescendo 2026",
+    excerpt: "An electrifying inter-school cultural extravaganza uniting vibrant young talents across disciplines.",
     link: "#"
   },
   {
     id: 3,
-    image: "/news/arts fest.jpeg",
-    category: "Culture",
-    date: "Recent",
-    title: "Arts Fest",
-    excerpt: "A grand celebration of creativity, talent, and artistic expression by the vibrant students of our Vidyalaya.",
+    image: "/news/CVP Chat Bot Siddha.jpeg",
+    category: "Academics",
+    date: "Latest",
+    title: "CVP Chat Bot Siddha",
+    excerpt: "Introducing Siddha, our state-of-the-art AI chatbot designed to assist students and parents with school information.",
     link: "#"
   },
   {
     id: 4,
-    image: "/news/environment day.jpeg",
-    category: "Campus",
-    date: "Recent",
-    title: "Environment Day",
-    excerpt: "Taking steps towards a greener future. Students participated in tree plantation drives and eco-awareness campaigns.",
+    image: "/news/Success Saga 2026.jpeg",
+    category: "Academics",
+    date: "2026",
+    title: "Success Saga 2026",
+    excerpt: "Honoring the stellar academic milestones, board examination toppers, and high achievers of Chinmaya Vidyalaya.",
     link: "#"
   },
   {
     id: 5,
-    image: "/news/sports meet.jpg",
+    image: "/news/chin elevens cup.jpeg",
     category: "Sports",
     date: "Recent",
-    title: "Annual Sports Meet",
-    excerpt: "Students showcased exceptional athleticism and team spirit during our multi-disciplinary sports competition.",
+    title: "Chin Elevens Cup",
+    excerpt: "Thrilling sportsmanship, teamwork, and championship football spirit at the prestigious Chin Elevens Cup.",
     link: "#"
   },
   {
     id: 6,
-    image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=800",
-    category: "Academics",
-    date: "Upcoming",
-    title: "Science Exhibition 2026",
-    excerpt: "Explore groundbreaking projects and scientific models created by our brilliant young minds.",
+    image: "/news/World Environment Day.jpeg",
+    category: "Campus",
+    date: "Annual",
+    title: "World Environment Day",
+    excerpt: "Championing eco-consciousness and sustainable living with sapling plantation and environmental awareness programs.",
     link: "#"
-  },
-
+  }
 ];
 
 const categories = ["All", "Event", "Academics", "Sports", "Culture", "Campus"];
@@ -71,6 +70,7 @@ const categories = ["All", "Event", "Academics", "Sports", "Culture", "Campus"];
 export default function NewsPage() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const filteredNews = allNews.filter((news) => {
     const matchesCategory = activeCategory === "All" || news.category === activeCategory;
@@ -161,13 +161,16 @@ export default function NewsPage() {
                     transition={{ duration: 0.3 }}
                     className="bg-white rounded-md overflow-hidden group hover:shadow-2xl hover:shadow-[#0F284A]/10 transition-all duration-300 border border-slate-100 flex flex-col"
                   >
-                    <div className="relative overflow-hidden h-56 shrink-0 bg-slate-200">
+                    <div
+                      className="relative overflow-hidden h-80 sm:h-96 md:h-[430px] shrink-0 bg-slate-100 cursor-pointer"
+                      onClick={() => setSelectedImage(news.image)}
+                    >
                       <img
                         src={news.image}
                         alt={news.title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                        className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
                       />
-                      <div className="absolute top-4 left-4">
+                      <div className="absolute top-4 left-4 z-10">
                         <span className="bg-white/95 backdrop-blur-sm text-[#0F284A] text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">
                           {news.category}
                         </span>
@@ -181,19 +184,14 @@ export default function NewsPage() {
                       </div>
 
                       <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#385EEC] transition-colors leading-snug">
-                        <Link href={news.link}>{news.title}</Link>
+                        <button onClick={() => setSelectedImage(news.image)} className="text-left font-bold hover:text-[#385EEC] transition-colors cursor-pointer">
+                          {news.title}
+                        </button>
                       </h3>
 
-                      <p className="text-slate-600 text-[15px] leading-relaxed mb-6 flex-1">
+                      <p className="text-slate-600 text-[15px] leading-relaxed">
                         {news.excerpt}
                       </p>
-
-                      <div className="mt-auto pt-4 border-t border-slate-100">
-                        <Link href={news.link} className="inline-flex items-center text-sm font-bold text-[#FF9924] hover:text-[#385EEC] transition-colors group/link">
-                          Read Full Article
-                          <ArrowRight className="w-4 h-4 ml-1.5 group-hover/link:translate-x-1 transition-transform" />
-                        </Link>
-                      </div>
                     </div>
                   </motion.div>
                 ))}
@@ -224,6 +222,31 @@ export default function NewsPage() {
 
         </div>
       </section>
+
+      {/* Lightbox / Modal */}
+      {selectedImage && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-8 bg-slate-950/95 backdrop-blur-xl animate-in fade-in duration-200">
+          <div className="absolute inset-0 z-0" onClick={() => setSelectedImage(null)}></div>
+          
+          <button 
+            onClick={() => setSelectedImage(null)}
+            className="absolute top-6 right-6 md:top-10 md:right-10 text-white/70 hover:text-white transition-colors p-3 bg-white/10 hover:bg-white/20 rounded-full z-50 backdrop-blur-md cursor-pointer"
+            aria-label="Close"
+          >
+            <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          
+          <div className="relative z-10 max-w-4xl w-full max-h-full flex flex-col items-center animate-in zoom-in-95 duration-300">
+            <img 
+              src={selectedImage} 
+              alt="Zoomed Poster"
+              className="max-w-full max-h-[88vh] object-contain rounded-md shadow-2xl ring-1 ring-white/10"
+            />
+          </div>
+        </div>
+      )}
 
       <Footer />
     </main>

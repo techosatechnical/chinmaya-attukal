@@ -6,12 +6,12 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 const roboticsImages = [
-  { id: 1, src: "/image/AI and robotics.jpeg", title: "AI & Robotics Workshop" },
-  { id: 2, src: "/image/ai ad robotics.jpeg", title: "Robotics Practical" },
-  { id: 3, src: "/image/ai and robotics 3.jpeg", title: "AI Learning" },
-  { id: 4, src: "/image/ai and robotics 4.jpeg", title: "Future Innovators" },
-  { id: 5, src: "/image/ai and robotics 5.jpeg", title: "Robotics Build" },
-  { id: 6, src: "/image/ai and robotics 6.jpeg", title: "Technology Hub" },
+  { id: 1, src: "/image/ai and robotics1.jpeg", title: "AI & Robotics Workshop" },
+  { id: 2, src: "/image/ai and robotics2.jpeg", title: "Robotics Practical" },
+  { id: 3, src: "/image/ai and robotics3.jpeg", title: "AI Learning" },
+  { id: 4, src: "/image/ai and robotics4.jpeg", title: "Future Innovators" },
+  { id: 5, src: "/image/ai and robotics5.jpeg", title: "Robotics Build" },
+  { id: 6, src: "/image/ai and robotics6.jpeg", title: "Technology Hub" },
 ];
 
 export default function AiRoboticsPage() {
@@ -25,7 +25,7 @@ export default function AiRoboticsPage() {
       <section className="relative pt-32 pb-10 md:pt-40 md:pb-10 bg-[#0B1121] text-white overflow-hidden flex flex-col items-center justify-center border-b border-white/10">
         <div className="absolute inset-0 z-0">
           <img
-            src="/image/AI and robotics.jpeg"
+            src="/image/ai and robotics1.jpeg"
             alt="AI and Robotics background"
             className="w-full h-full object-cover opacity-30"
           />

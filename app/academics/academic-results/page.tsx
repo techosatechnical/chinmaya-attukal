@@ -6,9 +6,10 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 const results = [
-  { id: 1, src: "/image/acdemic result 1.jpeg", alt: "Academic Result 1" },
-  { id: 2, src: "/image/acdemic result 2.png", alt: "Academic Result 2" },
-  { id: 3, src: "/image/acdemic result 3.jpeg", alt: "Academic Result 3" }
+  { id: 1, src: "/image/academic result 1.jpeg", alt: "Academic Result 1" },
+  { id: 2, src: "/image/academic result 2.jpeg", alt: "Academic Result 2" },
+  { id: 3, src: "/image/academic result 3.jpeg", alt: "Academic Result 3" },
+  { id: 4, src: "/image/academic result 4.jpeg", alt: "Academic Result 4" }
 ];
 
 export default function AcademicResultsPage() {
@@ -33,7 +34,7 @@ export default function AcademicResultsPage() {
 
       {/* Results Section */}
       <section className="max-w-7xl mx-auto px-6 lg:px-8 py-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
           {results.map((result) => (
             <div
               key={result.id}

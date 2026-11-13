@@ -6,22 +6,13 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 const videos = [
-  // 2026-27
-  { id: '9B3XSNZ0SDw', title: 'ENVIRONMENT DAY', date: '2026-27' },
-  { id: 'bakGcno5CWg', title: 'SCHOOL TOPPER -XII', date: '2026-27' },
-  { id: 'feyVtM5qQ98', title: 'SAMSKRTHOLTSAV', date: '2026-27' },
-  { id: 'ldOcmmzdxII', title: 'CHIN EXCELLENCE', date: '2026-27' },
-  // 2025-26
-  { id: 'RQtIQNUp-sA', title: 'READING DAY', date: '2025-26' },
-  { id: 'Fik9VnkM944', title: 'MILK DAY', date: '2025-26' },
-  { id: 'Uez539ubYtQ', title: 'PRAVESHANOLTHSAVAM', date: '2025-26' },
-  // 2024-25
-  { id: 'accK9bnYkG8', title: 'INDEPENDANCE DAY', date: '2024-25' },
-  { id: 'Lw5qn_FXYok', title: 'YOGA DAY', date: '2024-25' },
-  { id: 'RZ-dVMwaX9w', title: 'SREEKRISHNA JAYANTHI', date: '2024-25' }
+  { id: 'iMfduiZPI-k', title: 'THUMB PRINT — CHICK (PRE-KG)', date: '2026-27' },
+  { id: '4qhpaCcM35o', title: 'Stepping into Big Kid World — Pre-KG visit LKG', date: '2026-27' },
+  { id: 'EsUmOlhxo3c', title: 'Ramcharithmanas Parayan', date: '2026-27' },
+  { id: 'M5GaSroizLE', title: 'Hindi Divas', date: '2026-27' }
 ];
 
-const years = ['All', '2026-27', '2025-26', '2024-25', '2023-24', '2022-2023', '2021-2022'];
+const years = ['All', '2026-27'];
 
 export default function VideoGalleryPage() {
   const [activeYear, setActiveYear] = useState('All');
@@ -92,9 +83,9 @@ export default function VideoGalleryPage() {
               {/* Thumbnail Container */}
               <div className="relative aspect-video overflow-hidden bg-slate-900">
                 <img
-                  src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
+                  src={`/video-thumbnails/${video.id}.jpg`}
                   onError={(e) => {
-                    // Fallback to hqdefault if maxresdefault is not available
+                    // Fallback to direct YouTube hqdefault if local file is missing
                     (e.target as HTMLImageElement).src = `https://img.youtube.com/vi/${video.id}/hqdefault.jpg`;
                   }}
                   alt={video.title}

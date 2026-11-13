@@ -41,7 +41,7 @@ export default function LibraryPage() {
             </div>
             <div className="relative rounded-md overflow-hidden shadow-2xl">
               <img
-                src="/facilities/library.jpg"
+                src="/facilities/library2.jpg"
                 alt="Vidyalaya Library"
                 className="w-full h-80 object-cover hover:scale-105 transition-transform duration-700"
               />

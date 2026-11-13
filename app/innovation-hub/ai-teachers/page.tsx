@@ -6,7 +6,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 const teacherImages = [
-  { id: 1, src: "/image/ai trained teachers.jpeg", title: "AI Trained Teachers Workshop" },
+  { id: 1, src: "/image/ai trained teacherss.jpeg", title: "AI Trained Teachers Workshop" },
   { id: 2, src: "/image/ai trained teachers2.webp", title: "Educator Training" },
   { id: 3, src: "/image/ai trained teachers3.webp", title: "Interactive AI Sessions" },
 ];
@@ -22,7 +22,7 @@ export default function AiTeachersPage() {
       <section className="relative pt-32 pb-10 md:pt-40 md:pb-10 bg-[#0B1121] text-white overflow-hidden flex flex-col items-center justify-center border-b border-white/10">
         <div className="absolute inset-0 z-0">
           <img
-            src="/image/ai trained teachers.jpeg"
+            src="/image/ai trained teacherss.jpeg"
             alt="AI Trained Teachers background"
             className="w-full h-full object-cover opacity-30"
           />
@@ -46,22 +46,22 @@ export default function AiTeachersPage() {
         <div className="bg-white rounded-md shadow-xl shadow-slate-200/50 border border-slate-200 p-8 md:p-12 mb-10 text-center max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-slate-900 mb-6">Empowering Educators</h2>
           <p className="text-slate-600 text-lg leading-relaxed">
-            We believe that to raise future-ready students, we must first empower our educators. 
-            Our teachers undergo rigorous training in AI integration, enabling them to personalize learning, 
+            We believe that to raise future-ready students, we must first empower our educators.
+            Our teachers undergo rigorous training in AI integration, enabling them to personalize learning,
             automate administrative tasks, and bring innovative, tech-driven methodologies into the classroom.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {teacherImages.map((img) => (
-            <div 
-              key={img.id} 
+            <div
+              key={img.id}
               onClick={() => setSelectedImage(img.src)}
               className="rounded-md overflow-hidden bg-white border border-slate-200 cursor-pointer group shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-500"
             >
               <div className="relative overflow-hidden bg-slate-100">
-                <img 
-                  src={img.src} 
+                <img
+                  src={img.src}
                   alt={img.title}
                   className="w-full aspect-4/3 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
                   loading="lazy"
@@ -79,8 +79,8 @@ export default function AiTeachersPage() {
       {selectedImage && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-8 bg-slate-950/95 backdrop-blur-xl animate-in fade-in duration-200">
           <div className="absolute inset-0 z-0" onClick={() => setSelectedImage(null)}></div>
-          
-          <button 
+
+          <button
             onClick={() => setSelectedImage(null)}
             className="absolute top-6 right-6 md:top-10 md:right-10 text-white/50 hover:text-white transition-colors p-3 bg-white/10 hover:bg-white/20 rounded-full z-50 backdrop-blur-md"
           >
@@ -88,10 +88,10 @@ export default function AiTeachersPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
-          
+
           <div className="relative z-10 max-w-6xl w-full max-h-full flex flex-col items-center animate-in zoom-in-95 duration-300">
-            <img 
-              src={selectedImage} 
+            <img
+              src={selectedImage}
               alt="Zoomed"
               className="max-w-full max-h-[90vh] object-contain rounded-md shadow-2xl ring-1 ring-white/10"
             />

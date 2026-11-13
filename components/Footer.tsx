@@ -8,8 +8,17 @@ export function Footer() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10 lg:gap-12 mb-8 lg:mb-10">
           <div className="col-span-2 md:col-span-1 lg:col-span-1">
-            <Link href="/" className="inline-block mb-6">
-              <img src="/logos/CV Kollam WHITE.png" alt="Chinmaya Vidyalaya Kollam Logo" className="h-20 w-auto" />
+            <Link href="/" className="inline-flex items-center gap-3.5 mb-6 group">
+              <img
+                src="/logos/CV attukal logo white.png"
+                alt="Chinmaya Vidyalaya Attukal Logo"
+                className="h-16 sm:h-20 w-auto drop-shadow-sm group-hover:opacity-90 transition-opacity"
+              />
+              <img
+                src="/logos/CV attukal text white.png"
+                alt="Chinmaya Vidyalaya Attukal"
+                className="h-8 sm:h-9.5 lg:h-10 w-auto drop-shadow-sm group-hover:opacity-90 transition-opacity"
+              />
             </Link>
             <p className="text-slate-400 mb-6 leading-relaxed text-sm">
               Providing a strong foundation for students to discover their innate talents and skills, fostering holistic development and academic excellence.
@@ -55,22 +64,22 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start space-x-4">
                 <MapPin className="w-5 h-5 text-orange-400 shrink-0 mt-1" />
-                <span className="text-slate-400 text-sm">Chinmaya Vidyalaya<br />Kollam, Kerala</span>
+                <span className="text-slate-400 text-sm">Chinmaya Vidyalaya<br />Attukal, Trivandrum</span>
               </li>
               <li className="flex items-start space-x-4">
                 <Mail className="w-5 h-5 text-orange-400 shrink-0 mt-1" />
-                <span className="text-slate-400 text-sm">info@chinmayakollam.edu.in</span>
+                <span className="text-slate-400 text-sm">chin_attukal@chintvm.edu.in</span>
               </li>
               <li className="flex items-start space-x-4">
                 <Phone className="w-5 h-5 text-orange-400 shrink-0 mt-1" />
-                <span className="text-slate-400 text-sm">+91 0000 000 000</span>
+                <span className="text-slate-400 text-sm">0471-2455692, 2458051</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
-          <p>© 2026 Chinmaya Vidyalaya Kollam. All Rights Reserved.</p>
+          <p>© 2026 Chinmaya Vidyalaya Attukal. All Rights Reserved.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
             <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>

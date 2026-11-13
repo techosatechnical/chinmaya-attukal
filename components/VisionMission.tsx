@@ -66,7 +66,7 @@ export function VisionMission() {
             <div>
               <h3 className="text-lg font-bold text-slate-800 mb-1.5">Our Vision</h3>
               <p className="text-slate-600 leading-relaxed text-[13px] text-justify">
-                We are a forward-thinking school aiming to prepare our children and students for a rapidly changing world by equipping them with critical thinking skills, global perspective, and respect for core values of honesty, loyalty, and compassion, leading to personal, physical, moral and spiritual development. Developing these skills is the corner stone of the education we offer following the Chinmaya Culture. Students will have success for today and be prepared for tomorrow. In the next two years the school will improve reading habits of each individual from Primary classes onwards and activities related to reading will also be included.
+                Focus, believe, achieve and live the life to the fullest! ' Our dream is to fortify the young aspirants to meet the challenges of the rapidly changing technologically advanced world with a global perspective, by enhancing a safe learning inclusive zone that builds a foundation for life-long learning experience, without hindering the respect for core values of honesty, loyalty, perseverance and compassion, in partnership with parents and the community.
               </p>
             </div>
           </div>
@@ -79,7 +79,7 @@ export function VisionMission() {
             <div>
               <h3 className="text-lg font-bold text-slate-800 mb-1.5">Our Mission</h3>
               <p className="text-slate-600 leading-relaxed text-[13px] text-justify">
-                We at Chinmaya Vidyalaya, Kollam, commit to educate the whole child and honor the diversity of each individual intellectually, emotionally, socially, physically and spiritually by developing in each member of the student community the ability and passion to work wisely, creatively, and effectively for the betterment of humankind and implement the Chinmaya Vision Programme in its entirety.
+                We at Chinmaya Vidyalaya-Attukal dedicate ourselves to educate the whole child and honor the diversity of each individual intellectually, emotionally ,socially ,physically and spiritually by developing in each member of the student community the ability and passion to work wisely , creatively and effectively for the betterment of humankind and implement the Chinmaya Vision Programme in its entirety.
               </p>
             </div>
           </div>
@@ -87,7 +87,7 @@ export function VisionMission() {
         </div>
 
         {/* Right Side: Quotes Slider */}
-        <div 
+        <div
           className="w-full md:w-[40%] px-5 lg:px-7 pt-52 md:pt-60 pb-0 text-white flex flex-col items-center justify-end relative bg-cover bg-position-[center_35%]"
           style={{ backgroundImage: 'linear-gradient(to bottom, rgba(253, 135, 51, 0.1), rgba(253, 135, 51, 0.95)), url("/image/gurudev2.jfif")' }}
         >

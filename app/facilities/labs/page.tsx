@@ -10,27 +10,27 @@ export default function LabsPage() {
   const labs = [
     {
       title: "Physics Lab",
-      image: "/facilities/phy lab.jpg",
+      image: "/labs/Physics-Lab-1.jpg",
       description: "The Vidyalaya has a Physics Lab with all the necessary instruments required for both the Secondary and Senior Secondary sections. Our lab can be utilized by more than 30 students at a time. The Lab provides for all equipments as required under the affiliation rules."
     },
     {
       title: "Chemistry Lab",
-      image: "/facilities/chem lab.jpeg",
+      image: "/labs/Chemistry-Lab-2.jpg",
       description: "The Chemistry laboratory is a scientifically advanced lab which has the capacity to accommodate more than 40 students at a time. It meets the challenges of modern day infrastructure and safety requirements. The students can perform experiments with precision in this spacious lab, where ample stock of reagents and chemicals are made available."
     },
     {
       title: "Biology Lab",
-      image: "/facilities/bio lab.jpg",
+      image: "/labs/Biology-Lab-2.jpg",
       description: "The Biology lab can also accommodate more than 40 students at a time. A variety of models, charts, specimens and CDs are available."
     },
     {
       title: "Computer Lab",
-      image: "/facilities/computer lab.jpeg",
+      image: "/labs/Senior-Computer-Lab-1.jpg",
       description: "The Vidyalaya has a modern computer lab. Our students have unlimited access to computers and the professional software tools that go with them. The Vidyalaya is connected to the Internet, which facilitates a highly effective communication link across the globe. Our teaching laboratories are equipped with high-end machines. The lab has over 40 computers connected in a Local Area Network, and an Efficient UPS system for uninterrupted power supply. The Lab also enables more than 40 students to carry out practicals at a time."
     },
     {
       title: "Mathematics Lab",
-      image: "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=1000&auto=format&fit=crop",
+      image: "/labs/Math-Lab-1.jpg",
       description: "The vidyalaya has a well equipped Mathematics lab serving the purpose of making “Learning of Mathematics through practical experiments” possible. There are around 20 laminated charts on various topics. Number patterns, Experiments and Puzzles."
     }
   ];
@@ -43,7 +43,7 @@ export default function LabsPage() {
       <section className="relative pt-32 pb-10 md:pt-40 md:pb-10 bg-[#0B1121] text-white overflow-hidden flex flex-col items-center justify-center border-b border-white/10">
         <div className="absolute inset-0 z-0">
           <img
-            src="/facilities/chem lab.jpeg"
+            src="/labs/Chemistry-Lab-2.jpg"
             alt="Laboratories background"
             className="w-full h-full object-cover opacity-30"
           />

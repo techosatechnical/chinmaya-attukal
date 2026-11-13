@@ -12,29 +12,29 @@ export default function NewsletterPage() {
   const newsletters = [
     {
       id: 1,
-      title: "Annual Newsletter 2024-25",
-      date: "Academic Year 2024-25",
+      title: "Chin-Jyothis-Volume-4",
+      date: "Chin-Jyothis-Volume-4",
       description: "Discover our latest achievements, events, and academic highlights for the year.",
-      pdfLink: "/newsletter-_CV_KOLLAM2024-25.pdf",
+      pdfLink: "/Chin-Jyothis-Volume-4.pdf",
       coverColor: "from-blue-600 to-indigo-700"
     },
     // Placeholders to show the grid
-    {
-      id: 2,
-      title: "Term 1 Highlights",
-      date: "September 2023",
-      description: "A look back at the vibrant activities and successes of the first term.",
-      pdfLink: "#",
-      coverColor: "from-orange-500 to-red-600"
-    },
-    {
-      id: 3,
-      title: "Spring Edition",
-      date: "March 2023",
-      description: "Spring festival, sports day recaps, and special features from our students.",
-      pdfLink: "#",
-      coverColor: "from-emerald-500 to-teal-600"
-    }
+    // {
+    //   id: 2,
+    //   title: "Term 1 Highlights",
+    //   date: "September 2023",
+    //   description: "A look back at the vibrant activities and successes of the first term.",
+    //   pdfLink: "#",
+    //   coverColor: "from-orange-500 to-red-600"
+    // },
+    // {
+    //   id: 3,
+    //   title: "Spring Edition",
+    //   date: "March 2023",
+    //   description: "Spring festival, sports day recaps, and special features from our students.",
+    //   pdfLink: "#",
+    //   coverColor: "from-emerald-500 to-teal-600"
+    // }
   ];
 
   return (

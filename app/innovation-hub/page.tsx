@@ -22,7 +22,7 @@ const innovationHubItems = [
     color: "from-purple-500/20 to-fuchsia-500/5",
     iconColor: "text-purple-500",
     description: "Empowering students with cutting-edge skills in Artificial Intelligence and Robotics.",
-    bgImage: "/image/AI and robotics.jpeg"
+    bgImage: "/image/ai and robotics1.jpeg"
   },
   {
     title: "AI Trained Teachers",
@@ -44,7 +44,7 @@ export default function InnovationHubLandingPage() {
       <section className="relative pt-32 pb-10 md:pt-40 md:pb-10 bg-[#0B1121] text-white overflow-hidden flex flex-col items-center justify-center border-b border-white/10">
         <div className="absolute inset-0 z-0">
           <img
-            src="/image/AI and robotics.jpeg"
+            src="/image/ai and robotics1.jpeg"
             alt="Innovation Hub background"
             className="w-full h-full object-cover opacity-30"
           />

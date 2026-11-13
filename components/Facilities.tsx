@@ -20,7 +20,7 @@ const facilities = [
   { 
     title: "Labs", 
     href: "/facilities/labs", 
-    image: "/facilities/chem lab.jpeg",
+    image: "/labs/Chemistry-Lab-2.jpg",
     desc: "Well-equipped science and computer labs for practical, hands-on experiments."
   },
   { 
