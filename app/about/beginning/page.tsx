@@ -7,52 +7,54 @@ import { TopBar } from "@/components/TopBar";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { MapPin, Trophy, GraduationCap, Church, TreePine, Flame } from "lucide-react";
-import WarpText from "@/components/WarpText";
+import dynamic from "next/dynamic";
+
+const WarpText = dynamic(() => import("@/components/WarpText"), { ssr: false });
 
 /* ─── DATA ─────────────────────────────────────────────────── */
 const chapters = [
   {
-    year: "1985",
-    label: "The Founding",
-    date: "23 October · Vijayadesami Day",
-    headline: "A Dream Takes Root",
-    body: "The 23rd of October 1985 marked the fulfillment of a long-cherished dream of the people of Kollam. The Chinmaya Mission began a Nursery School in space graciously offered by the Mahila Samajam — the seed of something extraordinary.",
+    year: "1981",
+    label: "The Foundation",
+    date: "29 May 1981 · Established 1982",
+    headline: "A Vision Lit by Gurudev",
+    body: "Established in the year 1982, with the foundation stone laid by Swami Dayanandaji on 29th May, 1981, Chinmaya Vidyalaya Attukal stands as a testimony to the ever-increasing number of pupils passing through its threshold, fit to face the growing challenges of the current world. Led by the lamp of supreme knowledge lit by Gurudev Swami Chinmayananda, His vision packed with generations of phenomenal actions of our management transformed us into a hub of knowledge coupled with values and ideals.",
     accent: "#FF6A00",
     milestone: true,
   },
   {
-    year: "1988",
-    label: "Expansion",
-    date: "Three Years Later",
-    headline: "Growing Beyond Walls",
-    body: "The school outgrew its first home and moved to a larger building in Manayilkulangara. Classes expanded up to Std VII — a sign of the community's growing faith.",
+    year: "CBSE",
+    label: "Academic Excellence",
+    date: "32+ Years of CBSE Affiliation",
+    headline: "Quality Education & Meritorious Achievements",
+    body: "It has been 32 years since the inception of our Vidyalaya affiliated to the Central Board of Secondary Education. Significant progress has been ensured in providing educational opportunities to all students through the dedicated efforts of both teachers and students. Our richly qualified faculty religiously undergo refresher training programmes, sowing quality education that reaps quantitative results and National meritorious achievements.",
     accent: "#3B82F6",
     milestone: false,
   },
   {
-    year: "1996",
-    label: "A New Home",
-    date: "The Permanent Address",
-    headline: "3 Acres at Chandanathope",
-    body: "The Regional Trust purchased 3 acres of land at Kuzhiyam South, Chandanathope. A shed was built and classes began — laying the foundation of the Vidyalaya's eternal home.",
+    year: "NEP",
+    label: "Digital & Hybrid Era",
+    date: "1800+ Digital Classrooms & NEP 2020",
+    headline: "Resilience, Hybrid Learning & Progressive Education",
+    body: "During the pandemic, each home became our classroom — opening digital classrooms across 1800 houses with exquisite hybrid teaching. Aligned with NEP 2020, our highly skilled teachers bring a harmonious blending between accustomed and progressive methods of education. We stand up for four languages: Sanskrit thrives in our classrooms, Tamil holds a revered perch, Hindi speaks smartly alongside Malayalam, and English is the language of the campus — enriched by Karadipath for KG and classes 1–5 ('There is no lockdown to learning in a Karadipath classroom').",
     accent: "#10B981",
     milestone: false,
   },
   {
-    year: "2000",
-    label: "Consolidation",
-    date: "United at Last",
-    headline: "One School, One Mission",
-    body: "Two streams — one from the Mahila Samajam building and one from Chandanathope — merged into a single, unified institution. The Vidyalaya was whole.",
+    year: "LIFE",
+    label: "Character & Community",
+    date: "Scouts, Alumni & Digital India",
+    headline: "Be Prepared · Ambassadors Across the Nation",
+    body: "\"Be Prepared…\" — The Scouts and Guides mission plays an authentic role in building a self-sustained society and developing our youngsters as responsible Indians. Our alumni are our megaphone, ambassadors, and spokespersons — serving as Civil Servants, administrative heads, officers, doctors, engineers, defense personnel, artists, and sportspersons. As part of Digital India, we provide hassle-free online fee payment, digital academic progress reports via individual parent logins, daily parent communication, and dedicated city-wide transportation.",
     accent: "#8B5CF6",
     milestone: false,
   },
   {
-    year: "2001",
-    label: "Milestone Year",
-    date: "A Year of Firsts",
-    headline: "Permanent Home & Flying Colors",
-    body: "Sri K. Ravindranathan Nair led the construction of the permanent building. The inaugural SSLC batch excelled brilliantly. The school won 1st prize for 'Best Bharat Nata' and 2nd for 'Best School' (UP Section) in Republic Day Celebrations.",
+    year: "SEVA",
+    label: "Spiritual Roots",
+    date: "Chinmaya Vision Programme",
+    headline: "A School With A Difference",
+    body: "'Acquiring human values is a colossal task.' The spiritual ambience in our Vidyalaya promotes children woven into an intricate pattern of selfless love — ambassadors of hope, resilience, and joy. Both students and parents receive Gita and Sanskrit classes, offering comprehensive tools for implementing spiritual wisdom in everyday life. Seva is a cult in our Vidyalaya, and the Chinmaya Vision Programme keeps us agile and fresh each moment.",
     accent: "#FF6A00",
     milestone: true,
   },
@@ -112,8 +114,8 @@ function OriginHeading() {
           transition={{ duration: 0.6, delay: 0.15 }}
           className="text-slate-500 text-lg md:text-xl font-light max-w-2xl leading-relaxed mt-2 pb-10"
         >
-          From a single borrowed classroom in 1985 to a full CBSE campus —
-          four decades of faith, community, and transformation.
+          Established in 1982 with the foundation stone laid on 29th May 1981 —
+          walking before time, led by the lamp of supreme knowledge lit by Gurudev Swami Chinmayananda.
         </motion.p>
       </div>
     </section>
@@ -126,7 +128,7 @@ function QuoteIntro() {
     <section className="bg-white py-8 relative overflow-hidden border-y border-slate-100">
       {/* Giant decorative year */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 text-[22rem] font-black text-slate-100 leading-none select-none pointer-events-none pr-8 hidden lg:block">
-        1985
+        1981
       </div>
 
       {/* Subtle gradient blob */}
@@ -145,19 +147,19 @@ function QuoteIntro() {
               <Flame className="w-6 h-6 text-white" />
             </div>
             <div className="h-px flex-1 bg-gradient-to-r from-[#FF6A00]/40 to-transparent" />
-            <span className="text-[#FF6A00] text-xs font-black uppercase tracking-[0.3em]">23 Oct 1985</span>
+            <span className="text-[#FF6A00] text-xs font-black uppercase tracking-[0.3em]">29 May 1981</span>
           </div>
 
           <blockquote className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-800 leading-tight mb-10">
-            "The fulfillment of a long-cherished dream of the people of{" "}
-            <span className="text-[#FF6A00]">Kollam.</span>"
+            &ldquo;In all adversities there is always in its depth, a treasure of{" "}
+            <span className="text-[#FF6A00]">spiritual blessings</span> secretly hidden.&rdquo;
           </blockquote>
 
           <p className="text-slate-500 text-lg leading-relaxed max-w-2xl">
-            On Vijayadesami Day, the Chinmaya Mission planted its first seed — a
-            small nursery school in borrowed space at the Mahila Samajam. What
-            began as a single class would grow into one of Kollam's most beloved
-            institutions.
+            Established in the year 1982, the foundation stone being laid by Swami
+            Dayanandaji on 29th May, 1981, Chinmaya Vidyalaya Attukal stands a
+            testimony to the ever-increasing number of pupils passing through its
+            threshold, fit to face the growing challenges of the current world.
           </p>
         </motion.div>
       </div>
@@ -300,7 +302,6 @@ function BentoGrid() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#02133a]/70 via-[#02133a]/10 to-transparent" />
             <div className="absolute bottom-6 left-6">
               <p className="text-white/60 text-[10px] uppercase tracking-widest mb-1">Our Home</p>
-              <p className="text-white font-black text-lg leading-tight">Kuzhiyam South<br />Chandanathope, Kollam</p>
             </div>
           </motion.div>
 
@@ -314,8 +315,8 @@ function BentoGrid() {
           >
             <MapPin className="w-7 h-7 text-white/70" />
             <div>
-              <p className="text-5xl font-black text-white leading-none">3</p>
-              <p className="text-white/70 text-sm font-bold uppercase tracking-wider mt-1">Acres Campus</p>
+              <p className="text-5xl font-black text-white leading-none">1982</p>
+              <p className="text-white/70 text-sm font-bold uppercase tracking-wider mt-1">Established</p>
             </div>
           </motion.div>
 
@@ -330,7 +331,7 @@ function BentoGrid() {
             <GraduationCap className="w-7 h-7 text-blue-300" />
             <div>
               <p className="text-5xl font-black text-white leading-none">XII</p>
-              <p className="text-blue-200/60 text-sm font-bold uppercase tracking-wider mt-1">CBSE Classes</p>
+              <p className="text-blue-200/60 text-sm font-bold uppercase tracking-wider mt-1">KG to Class XII</p>
             </div>
           </motion.div>
 
@@ -346,9 +347,9 @@ function BentoGrid() {
               <Church className="w-7 h-7 text-purple-600" />
             </div>
             <div>
-              <p className="text-slate-800 font-black text-lg mb-1">Spiritual Ambience</p>
+              <p className="text-slate-800 font-black text-lg mb-1">Spiritual Ambience &amp; Gita Classes</p>
               <p className="text-slate-500 leading-relaxed text-sm">
-                An Ashram for the Acharyas and a Vinayakam temple within the campus — filling every corner with peace and spiritual energy.
+                &lsquo;Actions do not cling to me (Lord Krishna) because I am not attached to their results. Those who understand this and practice it, live in freedom.&rsquo; Both students and parents receive Gita and Sanskrit classes to implement spiritual wisdom in everyday life.
               </p>
             </div>
           </motion.div>
@@ -365,9 +366,9 @@ function BentoGrid() {
               <TreePine className="w-7 h-7 text-emerald-600" />
             </div>
             <div>
-              <p className="text-slate-800 font-black text-lg mb-1">Temple of Learning</p>
+              <p className="text-slate-800 font-black text-lg mb-1">Seva &amp; Chinmaya Vision Programme</p>
               <p className="text-slate-500 leading-relaxed text-sm">
-                Fully enclosed by a compound wall, the Vidyalaya stands amidst lush greenery — a campus designed for holistic growth of mind, body, and spirit.
+                Seva is a cult in our Vidyalaya. The Chinmaya Vision Programme keeps us agile and fresh each day, fostering brave boys and girls experienced in life skills to face the world with a smile.
               </p>
             </div>
           </motion.div>
@@ -385,10 +386,10 @@ function BentoGrid() {
             <div className="absolute inset-0 flex items-center px-10">
               <div>
                 <Trophy className="w-8 h-8 text-[#FF6A00] mb-3" />
-                <p className="text-white font-black text-xl md:text-2xl leading-tight max-w-md">
-                  1st Prize — 'Best Bharat Nata' &amp; 2nd Prize — 'Best School' (UP Section)
+                <p className="text-white font-black text-xl md:text-2xl leading-tight max-w-2xl">
+                  &ldquo;A SCHOOL WITH A DIFFERENCE&rdquo; — Fostering brave boys and girls achieving their full potential, looking at the world with a smile.
                 </p>
-                <p className="text-white/50 text-sm mt-2 uppercase tracking-widest">Republic Day · 2001–2002</p>
+                <p className="text-white/50 text-sm mt-2 uppercase tracking-widest">Chinmaya Vidyalaya Attukal · Since 1982</p>
               </div>
             </div>
           </motion.div>
