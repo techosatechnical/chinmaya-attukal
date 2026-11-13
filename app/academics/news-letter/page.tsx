@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 
 export const metadata = {
   title: "Newsletters | Chinmaya Vidyalaya",
-  description: "Stay updated with the latest news, events, and achievements at Chinmaya Vidyalaya, Kollam.",
+  description: "Stay updated with the latest news, events, and achievements at Chinmaya Vidyalaya, .",
 };
 
 export default function NewsletterPage() {
